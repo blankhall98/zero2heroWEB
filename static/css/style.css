@@ -33,6 +33,10 @@ small{
     padding-top: 20px;
 }
 
+#about{
+    padding-top: 20px;
+}
+
 #main-menu h4{
     font-weight: bold;
 }
@@ -40,6 +44,7 @@ small{
 #main-menu-content{
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 #main-menu-content .card{
