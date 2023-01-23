@@ -1,6 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     margin: 0;
-    background-color: black;
-    font-family: sans-serif;
-    color: bisque;
+    background-color: #f3f3f3;
+    font-family: arial, helvetica, sans-serif;
 }
+
+small{
+    color: rgb(150, 150, 150);
+    margin: 1px;
+    font-weight: bold;
+}
+
+#main-header{
+    background-color: black;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #e0e0e0;
+
+}
+
+#main-header h1{
+    color: #fff;
+    margin: 1px;
+    font-weight: bold;
+}
+
+#main-menu{
+    padding-top: 20px;
+}
+
+#main-menu h4{
+    font-weight: bold;
+}
+
+#main-menu-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-menu-content .card{
+    padding: 1px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#main-menu-content button{
+    width: 100%;
+}
+
+
+
