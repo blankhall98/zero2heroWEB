@@ -18,7 +18,10 @@ small{
 #main-header{
     background-color: black;
     padding: 5px;
-    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 5px;
+    padding-right: 10%;
     border-bottom: 5px solid #e0e0e0;
 
 }
@@ -59,7 +62,7 @@ small{
 
 #contact{
     padding: 15px;
-    width: 70%;
+    width: 80%;
     margin: auto;
     border-radius: 5px;
 }
