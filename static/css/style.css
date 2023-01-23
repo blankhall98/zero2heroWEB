@@ -30,11 +30,11 @@ small{
 }
 
 #main-menu{
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 #about{
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 #main-menu h4{
@@ -55,6 +55,20 @@ small{
 
 #main-menu-content button{
     width: 100%;
+}
+
+#contact{
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#main-footer{
+    background-color: black;
+    height: 30px;
+    margin-top: 20px;
+    border-top: 5px solid #e0e0e0;
 }
 
 
