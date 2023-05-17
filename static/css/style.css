@@ -18,30 +18,22 @@ small{
 #main-header{
     background-color: black;
     padding: 5px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 5px;
+    height: 120px;
     padding-right: 10%;
     border-bottom: 5px solid #e0e0e0;
 
-}
-
-#main-header h1{
-    color: #fff;
-    margin: 1px;
-    font-weight: bold;
 }
 
 #main-menu{
     padding-top: 25px;
 }
 
-#about{
+.container{
     padding-top: 25px;
-}
-
-#main-menu h4{
-    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 #main-menu-content{

@@ -5,16 +5,18 @@
 {%block content%}
 
     <div class="container" id="main-menu">
-        <h4>Quick Links</h4>
+        <h4>Enseñanza</h4>
         <p class="text-secondary">
             Elige una de nuestras 3 opciones.
         </p>
-        <div class="row" id="main-menu-content">
+        <br>
+        <div class="row justify-content-around" id="main-menu-content">
             
-            <div class="card text-center col-md-3">
+            <div class="card text-center col-sm-4 col-9 bg-dark">
                 <div class="card-body">
-                  <h5 class="card-title">Cursos</h5>
-                  <p class="card-text text-secondary">
+                  <h3 class="card-title text-warning">Cursos</h3>
+                  <br>
+                  <p class="card-text text-light">
                     Descubre los cursos activos y archivados que zero2hero ofrece.
                     Accede a contenido exclusivo y participa en discuciones.
                   </p>
@@ -22,59 +24,57 @@
                 </div>
             </div>
 
-            <div class="card text-center col-md-3">
+            <div class="card text-center col-sm-4 col-9 bg-dark">
                 <div class="card-body">
-                  <h5 class="card-title">Estudiantes</h5>
-                  <p class="card-text text-secondary">
+                  <h3 class="card-title text-warning">Estudiantes</h3>
+                  <br>
+                  <p class="card-text text-light">
                     Administra tus cursos y avance desde nuestra plataforma interactiva. 
                     Vuelvete un miembro de la comunidad zero2hero.
                   </p>
                   <button type="button" class="btn btn-warning">GO!</button>
                 </div>
             </div>
-
-            <div class="card  text-center col-md-3">
-                <div class="card-body">
-                  <h5 class="card-title">Docentes</h5>
-                  <p class="card-text text-secondary">
-                    Herramienta que simplifica la creacion y administracion de cursos.
-                    Potencializa la interaccion con la comunidad de alumnos.
-                  </p>
-                  <button type="button" class="btn btn-warning">GO!</button>
-                </div>
-            </div>
-
         </div>
+      </div>
 
-        <div class="container" id="about">
-            <h4>About zero2hero</h4>
-            <p class="text-secondary">
-                zero2hero es una academia en linea enfocada programacion, estadistica, ciencia de datos y finanzas.
-            </p>
-
-            <div class="row text-dark bg-dark" id="contact">
-                <h5 class="text-light">Contacto</h5>
-                <p class="text-warning">Si tienes cualquier duda, comentario: <strong>contacta al equipo zero2hero</strong>.</p>
-
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1" class="text-primary">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1" class="text-primary">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-
-                    <br>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-            </div>
-
+      <div class="container">
+        <h4>Comunidad zero2hero</h4>
+        <p class="text-secondary">
+            zero2hero es una academia en linea enfocada programacion, estadistica, ciencia de datos y finanzas.
+        </p>  
+        <br>              
+        <div class="row justify-content-around p-2">
+          <img src="{{url_for('static', filename='images/youtube.png')}}" alt="..." class="rounded-circle col-sm-2 col-3">
+          <img src="{{url_for('static', filename='images/instagram.png')}}" alt="..." class="rounded-circle col-sm-2 col-3">
+          <img src="{{url_for('static', filename='images/facebook.png')}}" alt="..." class="rounded-circle col-sm-2 col-3">
         </div>
+      </div>
+
+      <div class="container">
+        <h4>Contacto</h4>
+        <p class="text-secondary">
+            ¿Tienes alguna duda? Contáctanos
+        </p>
+        <br>
+        <form class="bg-dark col-sm-6 p-3 rounded">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="text-primary">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="text-primary">Mensaje</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="¡Escribe lo que quieras!">
+          </div>
+
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
         
-    </div>
+        
+
+   
 
 {%endblock%}
